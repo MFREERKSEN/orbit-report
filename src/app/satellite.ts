@@ -1,3 +1,5 @@
+import { isBoolean } from "util";
+
 export class Satellite {
 
   name: string;
@@ -10,7 +12,7 @@ export class Satellite {
     this.name = name;
     this.orbitType = orbitType;
     this.type = type;
-    this.operational = true;
+    this.operational = operational;
     this.launchDate = launchDate;
 
 
