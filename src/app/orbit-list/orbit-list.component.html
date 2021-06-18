@@ -1,0 +1,16 @@
+<h3>Orbit Report</h3>
+<table>
+   <tr class="header-row">
+      <th class="sortable">Name</th>
+      <th class="sortable">Type</th>
+      <th>Operational</th>
+      <th>Orbit Type</th>
+      <th>Launch Date</th>
+   </tr>
+   <tr *ngFor = "let satellites of satellites">
+     <td>{{satellites.name}}</td>
+     <td>{{satellites.type}}</td>
+     <td>{{satellites.operational}}</td>
+     <td>{{satellites.orbitType}}</td>
+     <td>{{satellites.launchDate}}</td>
+</table>
